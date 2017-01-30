@@ -54,6 +54,17 @@ gulp.task('bower', function(){
 
 })
 
+
+gulp.task('build', function(){
+    return gulp.src(config.DEV_DIR+'/sass/gicons.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass())
+    .pipe(config.production ? minifyCSS() : util.noop())
+    .pipe(gulp.dest(config.DIST_DIR+'css'))
+})
+
+
+
 //gulp browserSync Task
 gulp.task('serve', function(){
 
