@@ -24,12 +24,15 @@ h1, h2, h3, h4, h5, h6{
   width:100%;
 }
 .header{
-    @include diagonal(before, top, left, 200px, 200px, $globalBlue);
-    @include diagonal(after, bottom, right, 200px, 200px, $globalBlue);
-    height:300px;
+    //@include diagonal(before, top, left, 200px, 200px, $globalBlue);
+    //@include diagonal(after, bottom, right, 200px, 200px, $globalBlue);
+    background-image:url("../../dist/imgs/bg_2.jpg");
+    background-position: center center;
+    background-color:$globalBlue;
+    background-size: cover;
+    padding-bottom: 50px;
     padding-top:50px;
     position:relative;
-    background:$deepCharcoal;
     color:white;
     h1{
         small{
@@ -48,13 +51,61 @@ h1, h2, h3, h4, h5, h6{
         bottom: 0;
         margin-right: 20px;
     }
-    .type{
-      left:0;
-      color:white;
-      position:absolute;
-      bottom:1.5%;
-      margin-left:25px;
+    .searchInput{
+      border-radius: 50px;
+      height: 40px;
+      background: rgba(255,255,255,0.8);
     }
+    &:before{
+      content:'';
+      position: absolute;
+      left:0;
+      top:0;
+      bottom:0;
+      display: block;
+      right:0;
+      background:rgba(0, 104, 255, 0.7);
+    }
+  }
+.iconHolder{
+    position: relative;
+    width: 100%;
+    display: block;
+    padding:25px;
+    margin-bottom:20px;
+    float: left;
+    .icon{
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 15px;
+      border-radius: 5px;
+      i{
+        color: #0068ff;
+        vertical-align: middle;
+        margin-right: 10px;
+        font-size: 20px;
+      }
+      &:hover{
+        background:$globalBlue;
+        color:white;
+        i{
+          color:white;
+        }
+      }
+    }
+
+}
+
+.btn-primary{
+  background: $globalBlue;
+  color:white;
+  border:0px;
+  &:hover{
+    background:$globalBlue;
+    color:white;
+  }
 }
 
 .gicons_list{
