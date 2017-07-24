@@ -29,6 +29,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+[class^="2x"]:before,
+[class*="2x"]:before {
+  font-size: 2em; }
+
+[class^="3x"]:before,
+[class*="3x"]:before {
+  font-size: 3em; }
+
+[class^="4x"]:before,
+[class*="4x"]:before {
+  font-size: 4em; }
+
 .g-audio-cd:before {
   content: "\61"; }
 
