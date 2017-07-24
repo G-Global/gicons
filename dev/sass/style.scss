@@ -92,11 +92,18 @@ h1, h2, h3, h4, h5, h6{
         background:$globalBlue;
         color:white;
         i{
+          animation:bounceIn infinite 0.4s;
           color:white;
         }
       }
     }
 
+}
+
+.inverseBlock{
+  background:$globalBlue;
+  padding:25px;
+  text-align: center;
 }
 
 .btn-primary{

@@ -6301,7 +6301,13 @@ h1, h2, h3, h4, h5, h6 {
       background: #0068ff;
       color: white; }
       .iconHolder .icon:hover i {
+        animation: bounceIn infinite 0.4s;
         color: white; }
+
+.inverseBlock {
+  background: #0068ff;
+  padding: 25px;
+  text-align: center; }
 
 .btn-primary {
   background: #0068ff;

@@ -1,11 +1,11 @@
 
 @font-face {
   font-family: "gicons";
-  src:url("#{$g-font-path}gicons.eot");
-  src:url("#{$g-font-path}gicons.eot?#iefix") format("embedded-opentype"),
-    url("#{$g-font-path}gicons.woff") format("woff"),
-    url("#{$g-font-path}gicons.ttf") format("truetype"),
-    url("#{$g-font-path}gicons.svg#gicons") format("svg");
+  src:url('#{$g-font-path}gicons.eot');
+  src:url('#{$g-font-path}gicons.eot?#iefix') format('embedded-opentype'),
+    url('#{$g-font-path}gicons.woff') format('woff'),
+    url('#{$g-font-path}gicons.ttf') format('truetype'),
+    url('#{$g-font-path}gicons.svg#gicons') format('svg');
   font-weight: normal;
   font-style: normal;
 

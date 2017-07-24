@@ -1,37 +1,21 @@
-[data-icon]:before {
-  font-family: "gicons" !important;
-  content: attr(data-icon);
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
+.#{$g-css-prefix} {
+  display: inline-block;
+  font: normal normal normal #{$g-font-size-base}/#{$g-line-height-base} gicons; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto; // optimizelegibility throws things off #1094
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
-[class^="g-"]:before,
-[class*=" g-"]:before {
-  font-family: "gicons" !important;
-  font-style: normal !important;
-  font-weight: normal !important;
-  font-variant: normal !important;
-  text-transform: none !important;
-  speak: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.#{$g-css-prefix}-lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
 }
-[class^="2x"]:before,
-[class*="2x"]:before {
- font-size:2em;
-}
-[class^="3x"]:before,
-[class*="3x"]:before {
- font-size:3em;
-}
-[class^="4x"]:before,
-[class*="4x"]:before {
- font-size:4em;
-}
+.#{$g-css-prefix}-2x { font-size: 2em; }
+.#{$g-css-prefix}-3x { font-size: 3em; }
+.#{$g-css-prefix}-4x { font-size: 4em; }
+.#{$g-css-prefix}-5x { font-size: 5em; }
+
+.#{$g-css-prefix}-inverse { color: $g-inverse; }
